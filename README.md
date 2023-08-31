@@ -2,11 +2,12 @@
 
 ## Articles
 
-### [Re-use your fixtures by parametrization](./articles/parametrize_your_fixtures)  
-> #testing #python #dynamodb #aws
+### [Re-use your fixtures by parametrization](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/parametrize_your_fixutres)
 
 
-## How to run examples locally
+
+
+# How to run examples locally
 
 In order to run examples locally you need to have [Poetry](https://python-poetry.org/) installed:
 
