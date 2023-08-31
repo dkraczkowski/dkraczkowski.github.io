@@ -1,0 +1,10 @@
+.venv
+.idea
+__pycache__/
+*.py[cod]
+*$py.class
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+.DS_Store

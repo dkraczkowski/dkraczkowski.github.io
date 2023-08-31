@@ -1,0 +1,28 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry]
+authors = ["Dawid Kraczkowski <dawid.kraczkowski@kaizenreporting.com>"]
+description = "Parametrize your fixtures for better re-usability"
+name = "parametrize_your_fixtures"
+packages = [
+  {from = "src", include = "example_code"},
+]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.28.38"
+
+[tool.poetry.group.dev.dependencies]
+
+moto = "^4.1.10"
+pytest = "^7.3.1"
+
+[tool.pytest.ini_options]
+markers = [
+  "dynamodb_table: prepares a mock for dynamodb table which loads fixtures from a json file, fixture file can be specified by the `data` parameter",
+]
+testpaths = ["tests"]

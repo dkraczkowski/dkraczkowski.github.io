@@ -1,0 +1,35 @@
+[
+  {
+    "pk": "Pet",
+    "sk": "Bobik",
+    "name": "Bobik",
+    "age": 3,
+    "breed": "Poodle",
+    "tags": [
+      "cute",
+      "fluffy"
+    ]
+  },
+  {
+    "pk": "Pet",
+    "sk": "Sharik",
+    "name": "Sharik",
+    "age": 5,
+    "breed": "Pitbull",
+    "tags": [
+      "big",
+      "strong"
+    ]
+  },
+  {
+    "pk": "Pet",
+    "sk": "Tuzik",
+    "name": "Tuzik",
+    "age": 2,
+    "breed": "Chihuahua",
+    "tags": [
+      "small",
+      "angry"
+    ]
+  }
+]
