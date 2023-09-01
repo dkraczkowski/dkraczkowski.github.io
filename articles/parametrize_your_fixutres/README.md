@@ -71,7 +71,7 @@ import pytest
 def test_parametrized_fixture(dynamodb_table) -> None:
     ...
 ```
-> Fully working code is available on my [GitHub](https://github.com/dkraczkowski/dkraczkowski.github.io/blob/main/articles/parametrize_your_fixutres/tests/test_fixture.py
+> Fully working code is available on my [GitHub](https://github.com/dkraczkowski/dkraczkowski.github.io/blob/main/articles/parametrize_your_fixutres/tests/test_fixture.py)
 
 ## Conclusion
 
