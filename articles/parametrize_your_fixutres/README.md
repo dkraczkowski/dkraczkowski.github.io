@@ -52,7 +52,7 @@ def dynamodb_table(test_dir, request):
 ```
 > Keep in mind the implementation details from the above code is removed for brevity.
 > 
-> Fully working is available on my [GitHub](https://github.com/dkraczkowski/dkraczkowski.github.io/articles/parametrize_your_fixtures/tests/conftest.py)
+> Fully working is available on my [GitHub](https://github.com/dkraczkowski/dkraczkowski.github.io/blob/main/articles/parametrize_your_fixutres/tests/conftest.py)
 
 In the provided example, the `request` parameter within the Pytest fixture is an instance of a special object that offers insights into the current test run, specifically accessing markers set on tests. Utilizing this, the fixture is designed to set up a DynamoDB mock table with a schema and, if a `dynamodb_table` marker is associated with the current test, it fetches its custom parameters to potentially adjust the default table configurations or seed different data.
 
@@ -71,7 +71,7 @@ import pytest
 def test_parametrized_fixture(dynamodb_table) -> None:
     ...
 ```
-> Fully working code is available on my [GitHub](https://github.com/dkraczkowski/dkraczkowski.github.io/articles/parametrize_your_fixtures/tests/test_fixture.py)
+> Fully working code is available on my [GitHub](https://github.com/dkraczkowski/dkraczkowski.github.io/blob/main/articles/parametrize_your_fixutres/tests/test_fixture.py
 
 ## Conclusion
 
