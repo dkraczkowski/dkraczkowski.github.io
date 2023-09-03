@@ -1,0 +1,3 @@
+[submodule "articles/github_actions_python_aws/article-ci-pipeline"]
+	path = articles/github_actions_python_aws/article-ci-pipeline
+	url = https://github.com/dkraczkowski/article-ci-pipeline
