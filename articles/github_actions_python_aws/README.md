@@ -272,7 +272,7 @@ This dependency chain is managed using the __`needs`__ section.
 
 Makefile usage within our CI pipeline, guarantees a harmonized development and testing environment, minimizing unexpected discrepancies between local and CI builds.
 
-> All the code discussed in this article, as always is available on my GitHub repository. You can find it [here](https://github.com/dkraczkowski/dkraczkowski.github.io/articles/ci_pipeline_python_aws).
+> All the code discussed in this article, as always is available on my GitHub repository. You can find it [here](https://github.com/dkraczkowski/dkraczkowski.github.io/articles/github_actions_python_aws).
 
 ## Conclusion
 
