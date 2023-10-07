@@ -5,7 +5,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from pipeline.steps.format_validation import FormatValidationStep
+from example.format_validation import FormatValidationStep
 
 
 def test_can_instantiate() -> None:

@@ -4,8 +4,8 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from pipeline.steps.context import UserRecord
-from pipeline.steps.data_validation import DataValidationStep
+from example.context import UserRecord
+from example.data_validation import DataValidationStep
 
 
 @pytest.mark.parametrize("record", [

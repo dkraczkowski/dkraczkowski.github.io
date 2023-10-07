@@ -1,8 +1,8 @@
 import csv
 from typing import List
 
+from example.context import Context
 from pipeline.pipeline import NextStep
-from pipeline.steps.context import Context
 
 
 class FormatValidationStep:

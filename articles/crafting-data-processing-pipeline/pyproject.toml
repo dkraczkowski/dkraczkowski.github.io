@@ -8,6 +8,7 @@ description = "Harnessing Modular Processing: A Practical Dive into Pipeline Arc
 name = "pipeline"
 packages = [
   {from = "src", include = "pipeline"},
+  {from = "src", include = "example"},
 ]
 readme = "README.md"
 version = "0.1.0"

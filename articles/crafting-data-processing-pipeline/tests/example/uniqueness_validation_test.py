@@ -5,7 +5,7 @@ from unittest.mock import MagicMock
 import pytest
 from sqlite3 import Connection
 
-from pipeline.steps.uniqueness_validation import UniquenessValidationStep
+from example.uniqueness_validation import UniquenessValidationStep
 
 
 @pytest.mark.sqlite_db(data="users.yaml")

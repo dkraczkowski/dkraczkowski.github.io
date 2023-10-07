@@ -5,12 +5,12 @@ from typing import TextIO
 
 import pytest
 
+from example.context import UserRecord
+from example.data_validation import DataValidationStep
+from example.format_validation import FormatValidationStep
+from example.uniqueness_validation import UniquenessValidationStep
+from example.user_creation import UserCreationStep
 from pipeline.pipeline import Pipeline, NextStep
-from pipeline.steps.context import UserRecord
-from pipeline.steps.data_validation import DataValidationStep
-from pipeline.steps.format_validation import FormatValidationStep
-from pipeline.steps.uniqueness_validation import UniquenessValidationStep
-from pipeline.steps.user_creation import UserCreationStep
 
 
 @pytest.mark.sqlite_db(data="users.yaml")

@@ -6,7 +6,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from pipeline.steps.user_creation import UserCreationStep
+from example.user_creation import UserCreationStep
 
 
 @pytest.mark.sqlite_db(data="users.yaml")

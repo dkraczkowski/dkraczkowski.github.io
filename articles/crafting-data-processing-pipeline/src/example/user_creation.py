@@ -1,8 +1,8 @@
 from dataclasses import asdict
 from sqlite3 import Connection
 
+from example.context import Context, User
 from pipeline.pipeline import NextStep
-from pipeline.steps.context import Context, User
 
 
 class UserCreationStep:
