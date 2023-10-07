@@ -204,7 +204,7 @@ The `FormatValidationStep` accepts the CSV `headers` as a parameter. These heade
 The `context` variable in the `__call__` method acts as a shared state across the pipeline steps. The `next_step` function moves us to the next phase. For each CSV record, we execute the entire pipeline. This approach divides the complexity, making each step handle its specific task, promoting simplicity and modularity.
 
 
-> Note: Additional steps are available on my [Github repository](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/crafting-data-processing-pipeline/src/pipeline/steps) for brevity.
+> Note: Additional steps are available on my [Github repository](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/crafting-data-processing-pipeline/src/example) for brevity.
 
 
 ### The Pipeline
