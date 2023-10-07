@@ -1,0 +1,26 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry]
+authors = ["Dawid Kraczkowski <dawid.kraczkowski@kaizenreporting.com>"]
+description = "Harnessing Modular Processing: A Practical Dive into Pipeline Architecture"
+name = "pipeline"
+packages = [
+  {from = "src", include = "pipeline"},
+]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pyaml = "^23.9.7"
+pytest = "^7.3.1"
+
+[tool.pytest.ini_options]
+markers = [
+  "sqlite_db: prepares a mock for sqlite db table which loads fixtures from a yaml file, fixture file can be specified by the `data` parameter",
+]
+testpaths = ["tests"]

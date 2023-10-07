@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<people>
+    <person email="alice@example.com" age="28">
+        Alice Kooper
+    </person>
+    <person email="bob_at_example.com" age="32">
+        Bob Smith
+    </person>
+    <person email="charlie@example.com" age="24">
+        Charlie Doe
+    </person>
+    <person email="david_example.com" age="40">
+        David Haselkof
+    </person>
+</people>
