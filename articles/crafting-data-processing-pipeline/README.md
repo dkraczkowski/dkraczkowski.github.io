@@ -4,13 +4,7 @@ Diving into the intricacies of data processing can often feel like navigating an
 
 ## Understanding the Pipe & Filter Paradigm
 
-Imagine a relay race: runners (filters) effortlessly pass the baton (data) in a sequence, following a designated path (pipes). This perfectly encapsulates the "pipe and filter" architecture: data flows through sequential processing units (filters), linked by conduits (pipes) which enable modular transformations. 
-
-Within this framework, elements like Pipeline, Context, and Step shine, complemented by PipelineCursor, PipelineStatus, and PipelineResult.
-
-
-
-In our version of this race, key players include the `Pipeline`, `Context`, and `Step`, supported by structures like `PipelineCursor`, `PipelineStatus`, and `PipelineResult`.
+Imagine a relay race: runners (filters) effortlessly pass the baton (data) in a sequence, following a designated path (pipes). This perfectly encapsulates the "pipe and filter" architecture: data flows through sequential processing units (filters), linked by conduits (pipes) which enable modular transformations.
 
 > Note: Our narrative centers around synchronous processing. Venturing into asynchronous terrains offers another layer of complexity worth exploring separately.
 
