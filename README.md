@@ -8,4 +8,4 @@
 ### [Crafting a CI Pipeline: My Experience with GitHub Actions, Python and AWS](https://github.com/dkraczkowski/article-ci-pipeline)
 
 
-### [Crafting Data Processing Pipeline: The Elegance of Modular Data Processing with Python’s Pipeline Approach(https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/crafting-data-processing-pipeline)
+### [Crafting Data Processing Pipeline: The Elegance of Modular Data Processing with Python’s Pipeline Approach](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/crafting-data-processing-pipeline)
