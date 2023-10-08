@@ -97,15 +97,13 @@ While this direct method might seem appealing initially, its linearity can becom
 
 > The start is quick, but the meta might quickly become unreachable.
 
-## Enter: The Pipeline Paradigm
+## The Pipeline Paradigm
 
 An alternative way to the above implementation might be moving towards more flexible solution involving the pipeline approach.
 
 At our disposal, Python offers two core structures to encapsulate logic; functions and classes.
 
 While each structure shines in its specific scenarios, a universal interface can be crafted using Python's dunder (double underscore) method: `__call__`.
-
-Let's draft a foundational interface, outlining the essential contract for our code:
 
 ```python
 from typing import Protocol
@@ -158,7 +156,7 @@ class PipelineStep(Protocol[Context]):
 
 ### Implementing the `FormatValidationStep`
 
-With our interface in place, it's time to breathe life into our pipeline by creating concrete implementations - validating the format of incoming files.
+With our interface in place, it's time to breathe life into our pipeline by creating an example implementation - validating the format of incoming files.
 
 ```python
 import csv
@@ -198,7 +196,7 @@ The `FormatValidationStep` accepts the CSV `headers` as a parameter. These heade
 The `context` variable in the `__call__` method acts as a shared state across the pipeline steps. The `next_step` function moves us to the next phase. For each CSV record, we execute the entire pipeline. This approach divides the complexity, making each step handle its specific task, promoting simplicity and modularity.
 
 
-> Note: Additional steps are available on my [Github repository](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/crafting-data-processing-pipeline/src/example) for brevity.
+> Note: Additional steps are implemented and accessible on my [Github repository](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/crafting-data-processing-pipeline/src/example) for brevity.
 
 
 ### The Pipeline
@@ -350,8 +348,6 @@ class PipelineCursor(Generic[Context]):
 
         current_step(context, next_step)
 ```
-
-Though it addresses the immediate issue, our Pipeline stands as a foundational scaffold, sparking numerous potential directions for further enhancement, including threading, asynchronous processing, or multiprocessing.
 
 To set the right foundations, we are still missing one component of any robust system: Error Handling.
 
