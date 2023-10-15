@@ -1,6 +1,6 @@
 # Technical Debt: Experience, Thoughts and Strategies
 
-Throughout my career, I've encountered a substantial amount of technical debt, a challenge that many in the software industry can relate to. Despite employing numerous methods and significant resources to tackle this issue, it remains an unavoidable part of our daily struggle. My recent experience with this "wild plant" was the trigger for this article. Without wasting more of your time, let's delve into the nature of technical debt and explore potential solutions to handle it, making development easier while preserving your sanity.
+Throughout my career, I've encountered a substantial amount of technical debt, a challenge that many in the software industry can relate to. Despite employing numerous methods and significant resources to tackle this issue, it remains an unavoidable part of our daily struggle. My recent experience with this "wild beast" was the trigger for this article. Without wasting more of your time, let's dive into the nature of technical debt and explore potential solutions to deal with it.
 
 
 ## The Nature of Technical Debt
