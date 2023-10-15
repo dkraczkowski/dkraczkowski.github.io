@@ -17,7 +17,7 @@ Now, let me share a little secret with you - though you might've already sensed 
 
 In the world of standups, brevity is brilliance. My experience taught me that the best standups are the ones where deliverables take the center stage. Dive deep into those user stories. Seek out feedback, flag those blockers, and set your gaze at that deployment goal. Let's skip the mundane daily play-by-plays; they often don't offer the insights or synchronicity we truly need.
 
-Moreover, if your standup starts to resemble a random chat room, it's waving a big red flag. It's hinting at a deeper communication issue brewing during the rest of the day. Group your team, figure out what's pulling these off-course conversations into your standups. After all, these sessions are for the collective, not personal monologues.
+> Moreover, if your standup starts to resemble a random chat room, it's waving a big red flag. It's hinting at a deeper communication issue brewing during the rest of the day. Group your team, figure out what's pulling these off-course conversations into your standups. After all, these sessions are for the collective, not personal monologues.
 
 
 ### Disorganised Planning
@@ -25,15 +25,14 @@ Now, you opened your project tools and felt like you've stumbled into a forgotte
 
 Let be serious for a second, shall we? In such an environment the focus and essence is lost. Developers might find themselves investing time and skill into tasks that that end up being scrapped or might become obsolete tomorrow. Such discrepancies can lead to half-baked solutions or rushed code, fattening up our technical debt.
 
-For optimal project flow, it's crucial to keep the team aligned with top-priority tasks. Clear sprint goals and well-defined user stories act as guides, steering developers effectively. During planning, present a clear vision, convey its value, and seek the team's insights, ensuring clarity and engagement.
+> For optimal project flow, it's crucial to keep the team aligned with top-priority tasks. Clear sprint goals and well-defined user stories act as guides, steering developers effectively. During planning, present a clear vision, convey its value, and seek the team's insights, ensuring clarity and engagement.
 
 ### The Dilemma of Documentation: Too Much, Too Little, Too Scattered
 Picture this: You're on a treasure hunt, but instead of a map leading you to the gold, you've got a mountain of papers, scattered across all the places, and you’re trying to find that one piece of critical information. Sounds exhausting, right? Now, swing to the other extreme: you're in that same hunt, but this time there's no map at all. You're blindfolded, relying on whispers and hunches. Neither scenario is particularly inviting, is it? 
 
 Documentation in either of state, can slow down processes, lead to assumptions, or even encourage workarounds, all of which aren't best practices. So, what's the way forward? Think of documentation as of a craft, where less can be more, but clarity is king. Prioritise brevity, but ensure all critical information stands out. Discuss it, make sure everyone's on the same page. 
 
-Real game changer here is to cultivate the culture where regularly reviewing and updating documentation is an integral part of a well-defined definition of done.
-
+> Real game changer here is to cultivate the culture where regularly reviewing and updating documentation is an integral part of a well-defined definition of done.
 
 ### Legacy Code Challenges: Nurturing New Features While Pruning the Old
 Features are like plants in a flourishing garden, where vibrant, new flowers are vying for space, nutrients, and sunlight. Yet, there are older, wilting plants that have long passed their prime but still occupy valuable ground. As a gardener, you'd want to ensure that both the blossoming flowers and the matured plants coexist, but there comes a time when one must prune the old to make room for the new.
@@ -46,9 +45,16 @@ Working with inadequate tools feels like using a hammer for everything in the ga
 
 In the tech realm, this scenario is more common than you'd think. Using outdated or ill-suited software is just like trying to garden with the wrong equipment. It can not only impede progress but also open up vulnerabilities. Just as a rusty shovel might harm us, outdated tools in our tech projects can leave us exposed to various pitfalls, slowing down progress and compromising security. I've witnessed this firsthand with issues like outdated TLS protocols and the cessation of support for once-popular frameworks. Often, developers, under pressure, resort to temporary workarounds rather than implementing optimal solution.
 
-The solution; take a proactive approach by keeping a vigilant eye on the tools and libraries you use. Know their lifespans, and be aware of when they're nearing their end. Schedule a periodic 'tool check' and make it a habit to discuss the state of your tooling. Perhaps even set reminders or alarms – whatever it takes to ensure you don’t get caught off-guard. 
+The solution; take a proactive approach by keeping an eye on the tools and libraries you use. Know their lifespans, and be aware of when they're nearing their end. Schedule a periodic 'tool check' and make it a habit to discuss the state of your tooling. Perhaps even set reminders or alarms – whatever it takes to ensure you don’t get caught off-guard. You can also rely on tools like dependabot or specific proxies for managing your external dependencies.
 
-And during project planning? Make addressing these concerns part of your non-functional requirements. It might seem like extra work now, but trust me, future-you will be sending heaps of gratitude for the saved headaches and smoother sails.
+> And during project planning? Make addressing these concerns part of your non-functional requirements. It might seem like extra work now, but trust me, future-you will be sending heaps of gratitude for the saved headaches and smoother sails.
+
+### Navigating Shifting Visions and Terminology
+Code isn't the only realm that can get muddled; a product's core ideas and visions can also drift. A vague or frequently altered vision complicates matters. Old terminologies and processes might persist in the code, wrongly used in new scenarios where they're out of place.
+
+To address this, I recommend a few approaches. Establishing and centrally updating a shared language is crucial. As terminologies change, immediate code refactoring, accompanied by process updates, ensures cohesion. Periodic feedback loops are also vital to ensure everyone understands and aligns with the vision, terminology, and processes. These strategies, among others, offer a timely solution.
+
+> Misaligned terminology isn't just a coding issue; it disrupts team dynamics. Think of team members using varied terms for identical concepts or the reverse. This confusion can then translate into the product, yielding features that don't align with user needs.
 
 ### Low confidence in deliveries
 
@@ -66,7 +72,7 @@ Burnout isn't merely about physical and mental fatigue. It's the overwhelming se
 
 When setting your team's goals and timelines, the emphasis should be on long-term sustainability. Ensure pauses between demanding cycles, channel resources into skill development, and foster a culture where feedback is not just encouraged but expected. Keep an eye on the distribution of tasks: ensure members alternate between bug-fixes and feature developments. It's also essential that intense sprints are succeeded by more relaxed ones.
 
-Recognizing and acting on burnout symptoms late in the game can have irreversible consequences. Not only do you risk the break of team efficiency, but trust, once lost, might be never regained again. 
+> Recognizing and acting on burnout symptoms late in the game can have irreversible consequences. Not only do you risk the break of team efficiency, but trust, once lost, might be never regained again. 
 
 ## Harnessing Technical Debt to Your Advantage
 While technical debt often gets a bad reputation, it can be harnessed strategically to provide a technical edge. When managed correctly, it can serve as a springboard for both growth and innovation. Moreover, it can bolster your team during demanding phases, offering a buffer that enables a more fluid development process.
