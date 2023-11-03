@@ -30,15 +30,13 @@ class Wallet(Entity):
         self.locked = False
         super().__init__()
 
-    def transact(self, amount: Money, event_bus: Optional[EventBus] = None) -> None:
-        if not event_bus:
-            event_bus = InMemoryEventBus()
+    def transact(self, amount: Money, event_bus: EventBus) -> None:
         if self.locked:
             raise Exception("Wallet is locked, transactions are not possible")
 
         if amount > 0:
             self.balance += amount
-            event_bus.publish(FundsDeposited(self.id, amount))
+            event_bus and event_bus.publish(FundsDeposited(self.id, amount))
             return
 
         if amount < 0:
@@ -55,7 +53,5 @@ class Wallet(Entity):
                     event_bus.publish(OverdraftOccurred(self.id, amount))
 
     def lock_wallet(self, event_bus: Optional[EventBus] = None) -> None:
-        if not event_bus:
-            event_bus = InMemoryEventBus()
         self.locked = True
         event_bus.publish(WalletLocked(self.id, self.balance))

@@ -261,7 +261,7 @@ In addition to the approach where events are yielded as an iterator, a sibling i
 > This approach to event propagation by direct method result is particularly applicable for systems where the clear delineation of operation outcomes is required and where the subsequent event handling is orchestrated outside the entity's boundaries.
 
 ### Event Bus Injection
-In this variant of event propagation, the method does not return events or declare them statically but instead receives an event bus as a parameter. This strategy hinges on the use of an interface to abstract the event handling, creating a clear separation between entity's responsibilities and event propagation. An optional event bus parameter also serves to simplify the interface, offering greater adaptability in how events are managed.
+In this variant of event propagation, the method does not return events or declare them statically but instead receives an event bus as a parameter. This strategy hinges on the use of an interface to abstract the event handling, creating a clear separation between entity's responsibilities and event propagation.
 
 Here's a snapshot of how this would be set up:
 ```python
@@ -285,9 +285,7 @@ class InMemoryEventBus:
 class Wallet(Entity):
     ...
 
-    def transact(self, amount: Money, event_bus: Optional[EventBus] = None) -> None:
-        if event_bus is None:
-            event_bus = InMemoryEventBus()
+    def transact(self, amount: Money, event_bus: EventBus) -> None:
         ...
             event_bus.publish(FundsDeposited(self.id, amount))
         ...
