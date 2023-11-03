@@ -300,9 +300,9 @@ On the downside, this approach necessitates an additional parameter, which can s
 
 
 # Wrap Up
-Alright, we’ve taken quite the tour through the different ways you can handle event propagation in your domain 
-entities. Staring from a simple strategy and ending up with a external-focused solution. Which one should you consider? 
+Alright, we've taken quite the tour through the different ways you can handle event propagation in your domain entities. Staring from a simple strategy and ending up with a external-focused solution. Which one should you consider?
 
-The real trick is finding which pattern plays nice with your architecture and simplifies your life. Whether you’re all about that immediate feedback or you're looking to keep your entities clean and mean, your choice sets the stage for how your application behaves.
+The real trick is finding which pattern plays nice with your architecture and simplifies your life. Whether you're all about that immediate feedback or you're looking to keep your entities clean and mean, your choice sets the stage for how your application behaves.
+I would love to hear which of the presented strategies you use on your daily basis, or would see as a your "goto" solution.
 
 Happy Coding!
