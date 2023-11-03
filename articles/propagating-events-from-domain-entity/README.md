@@ -255,7 +255,7 @@ In this approach, events become immediate outcomes of the transact method, offer
 However, this explicitness can be a double-edged sword. On one hand, it does indeed simplify the entity's internals by doing away with the need for an event collection mechanism. On the other hand, it increases the responsibility of the method's caller to correctly handle these events, adding a layer of complexity to the client code.
 
 
-In addition to the approach where events are yielded as an iterator, a sibling implementation might collect events within the entity and return them as a single collection upon method completion. This variation merges the explicitness of the direct-yield approach with the benefits of internal event collection, offering a snapshot of all events resulting from a method's execution in one package. However, it does not afford the instant feedback provided by yielding events as they occur. 
+In addition to the approach where events are yielded as an iterator, a sibling implementation might be put in place. This alternative solution would collect events within the entity and return them as a single collection upon method completion. However, it does not afford the instant feedback provided by yielding events as they occur.
 
 
 > This approach to event propagation by direct method result is particularly applicable for systems where the clear delineation of operation outcomes is required and where the subsequent event handling is orchestrated outside the entity's boundaries.
