@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "event-propagation"
+version = "0.1.0"
+description = ""
+authors = ["Dawid Kraczkowski <dawid.kraczkowski@gmail.com>"]
+readme = "README.md"
+packages = [
+  {from = "src", include = "domain"},
+  {from = "src", include = "io"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -11,3 +11,5 @@
 ### [Crafting Data Processing Pipeline: The Elegance of Modular Data Processing with Python’s Pipeline Approach](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/crafting-data-processing-pipeline)
 
 ### [Technical Debt: Experience, Thoughts and Strategies](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/technical-debt-thoughts)
+
+### [Events in Domain-Driven Design: Event Propagation Strategies](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/propagating-events-from-domain-entity)
