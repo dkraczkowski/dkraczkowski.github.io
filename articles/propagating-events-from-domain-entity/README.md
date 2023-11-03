@@ -228,7 +228,7 @@ However, this can introduce global state complexities, potentially complicating 
 
 ### Events as a Result of Method Invocation
 
-Another great pattern for event propagation within domain-driven design is to have methods directly return the events they generate. This approach aligns closely with command-query responsibility segregation (CQRS) principles, where the command aspect of the method not only changes the state of the entity but also produces a result—in this case, an event or a sequence of events that indicate what changes have occurred.
+Another great pattern for event propagation within domain-driven design is to have methods directly return the events they generate. This method not only changes the state of the entity but also produces a result-in this case, an event or a sequence of events that indicate what changes have occurred.
 
 To apply this pattern to our Wallet entity, we might refactor the `transact` method to yield events as they occur:
 
