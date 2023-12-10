@@ -15,4 +15,4 @@
 ### [Events in Domain-Driven Design: Event Propagation Strategies](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/propagating-events-from-domain-entity)
 
 
-### [Mastering the Recruitment Process - Conducting Effective Interviews and Beyond](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/building-recruitment-process)
+### [Recruitment Process - Conducting Effective Interviews and Beyond](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/building-recruitment-process)
