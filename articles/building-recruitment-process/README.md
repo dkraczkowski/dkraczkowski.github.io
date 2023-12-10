@@ -81,7 +81,7 @@ For assessing more senior or advanced developers, consider an on-call technical 
 
 In cases where public repositories are not available, or for a more structured approach, assign a practical task relevant to the role. For instance, backend developers might be tasked with developing an API endpoint, while front-end developers could be asked to create a component interfacing with an API. These tasks, though simple for experienced developers, are effective in evaluating technical and problem-solving abilities. Use the same task for different experience levels, but adjust the scoring criteria to match the expectations for each role.
 
-A comprehensive review guide is essential for a consistent and fair evaluation. This guide should outline the task, evaluation criteria, and scoring system. Involving your team in the review process not only aids in their development but also ensures a more inclusive approach to recruitment. For reference, an example review guide template is available for download from my [Git repository](...).
+A comprehensive review guide is essential for a consistent and fair evaluation. This guide should outline the task, evaluation criteria, and scoring system. Involving your team in the review process not only aids in their development but also ensures a more inclusive approach to recruitment. For reference, an example review guide template is available for download from my [Git repository](https://github.com/dkraczkowski/dkraczkowski.github.io/blob/main/articles/building-recruitment-process/review_guide.md).
 
 The next section will delve into conducting interviews, both with and without a technical task assignment.
 
