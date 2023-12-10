@@ -1,4 +1,4 @@
-# Mastering the Recruitment Process - Conducting Effective Interviews and Beyond
+# Recruitment Process - Conducting Effective Interviews and Beyond
 
 As a lead or senior developer, navigating the recruitment process is often part of your evolving role. Whether you're building a new team or enhancing an existing one, this guide is tailored for you.
 
