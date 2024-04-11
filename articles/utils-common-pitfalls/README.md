@@ -11,6 +11,9 @@ As the project evolves, this utils package starts to resemble the core of a depe
 
 ```mermaid
 flowchart TD
+    style MA fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MB fill:#90EE90,stroke: #00ab41,color: #00ab41;
+
     DA[Dependency A] --> Utils[Utils Package]
     DB[Dependency B] --> Utils
     DC[Dependency C] --> Utils
@@ -25,7 +28,10 @@ As the project grows, new microservices necessitate the expansion of the utils p
 
 ```mermaid
 flowchart TD
-    style MC stroke-dasharray: 5,5,stroke-width:2px,stroke:#333;
+    style MA fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MB fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    
+    style MC fill:#90EE90,color: #00ab41,stroke-dasharray: 5,5,stroke-width:2px,stroke:#00ab41;
     style DD stroke-dasharray: 5,5,stroke-width:2px,stroke:#333;
     DA[Dependency A] --> Utils[Utils Package]
     DB[Dependency B] --> Utils
@@ -44,7 +50,10 @@ So far, everything seems great. You're working on improvements, and business is 
 
 ```mermaid
 flowchart TD
-    style MD stroke-dasharray: 5,5,stroke-width:2px,stroke:#333;
+    style MA fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MB fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MC fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MD stroke-dasharray: 5,5,stroke-width:2px,fill:#90EE90,stroke: #00ab41,color: #00ab41;
     style DE stroke-dasharray: 5,5,stroke-width:2px,stroke:#333;
     DA[Dependency A] --> Utils[Utils Package]
     DB[Dependency B] --> Utils
@@ -63,13 +72,12 @@ Business has another deadline for you. You and your team imminently started the 
 
 ```mermaid
 flowchart TD
-
+    style MA fill:#ff817e,stroke: #00ab41,color: #a60000;
+    style MB fill:#ff817e,stroke: #00ab41,color: #a60000;
+    style MC fill:#ff817e,stroke: #00ab41,color: #a60000;
+    style MD fill:#ff817e,stroke: #00ab41,color: #a60000;
     style DB stroke-width:2px,stroke:#ff0000;
-    style Utils stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
-    style MA stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
-    style MB stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
-    style MC stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
-    style MD stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
+    style Utils stroke-width:2px,stroke:#ff0000;
     
     DA[Dependency A] --> Utils[Utils Package]
     DB[Dependency B] --> Utils
@@ -92,7 +100,50 @@ I hope by now the conundrum wrapped in a utils package is becoming clearer. Whil
 
 To effectively tackle these challenges, a more nuanced approach to shared code is essential. Embracing the single responsibility principle for shared libraries can help ensure they remain focused and purposeful, reducing the risk of creating an unwieldy, catch-all utility monster. Sometimes, accepting a bit of repetition in service-specific code is far preferable to weaving a dense web of dependencies that can ensnare your project down the line.
 
+```mermaid
+flowchart TD
+
+    style LA stroke-dasharray: 5,5,stroke-width:2px;
+    style LB stroke-dasharray: 5,5,stroke-width:2px;
+    style LC stroke-dasharray: 5,5,stroke-width:2px;
+    style MA fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MB fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MC fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    style MD fill:#90EE90,stroke: #00ab41,color: #00ab41;
+    
+    DA[Dependency A] --> LA[Utils Package]
+    DB[Dependency B] --> LA
+    DC[Dependency C] --> LB
+    DD[Depedency D] --> LC
+    DE[Depedency E] --> LC
+    MB[Microservice B]
+    MC[Microservice C]
+    MD[Microservice D]
+    LA[Library A]
+    LB[Library B]
+    LC[Library C]
+    LA --> MA[Microservice A]
+    LB --> MA
+    LC --> MC
+    LB --> MB
+    LB --> MD
+    MB --> MD
+```
+
+Once you find yourself managing a utils library that's become a global dependency, it's time to take strategic steps to refine your approach. Here's what you should do:
+
+- **Audit your utils**: Start with a comprehensive review to understand the usage, users, and frequency of the utilities within your package. Document it, keep it for ticket creation.
+- **Refactor into specialised libs**: Break down the monolithic utils package into smaller, targeted libraries organized by specific functionalities or domains, such as logging or validation. Each should have its own source control and SDLC (Software Development Lifecycle)
+- **Set Up Clear Boundaries**: Clearly define and communicate what qualifies for inclusion in a shared library. Engage your team in this process to ensure everyone understands and adheres to these criteria.
+- **Deprecate the `utils` package**: Officially inform your team that the `utils` package will no longer be maintained and should not be used for new development efforts.
+- **Migrate Services to use new libraries**: Collaboratively plan and execute the transition of services to these new, specialized libraries, handling one service at a time to ensure a smooth migration.
+- **Confirm and Clean Up**: Conduct a thorough final review to ensure all services have successfully migrated away from the utils package, then proceed to safely decommission and remove the package.
+
+### Improved approach
+
 The act of continuous refactoring and ongoing architecture evaluation cannot be overstated. They're not just best practices but survival strategies for maintaining a system that's both sustainable and adaptable. And let's be real—dealing with some duplicated code is often a lesser evil than trying to untangle a mess of poorly orchestrated, tightly coupled utilities.
+
+## Summary
 
 This tale of evolving from a simple utils package to a complex interdependency network serves as a gentle warning. By recognizing these pitfalls and thoughtfully addressing them, we can forge more resilient, autonomous, and scalable microservices architectures. Hopefully, this discussion sheds light on a path forward, helping both you and me in our future coding adventures.
 
