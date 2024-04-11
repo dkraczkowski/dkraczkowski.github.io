@@ -59,7 +59,32 @@ flowchart TD
 ```
 
 ## The Breakdown
-Business has another deadline for you. You and your team imminently started the work. Just when you think you’ve got everything under control, a new challenge arises. A bug is discovered in one of the libraries within your beloved utils package. Worse still, a vulnerability is uncovered, necessitating a hotfix. The centralisation of your utils package now poses a significant risk, complicating the deployment process and revealing the fragility of your system. Trust me, this scenario is all too familiar, and it's a stark reminder of the complexities we inadvertently create.
+Business has another deadline for you. You and your team imminently started the work. Just when you think you’ve got everything under control, a new challenge arises. A bug is discovered in one of the libraries within your beloved utils package. Worse still, a vulnerability is uncovered, necessitating a hotfix. The centralisation of your utils package now poses a significant risk, complicating the deployment process and revealing the fragility of your system. 
+
+```mermaid
+flowchart TD
+
+    style DB stroke-width:2px,stroke:#ff0000;
+    style Utils stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
+    style MA stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
+    style MB stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
+    style MC stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
+    style MD stroke-dasharray: 5,5,stroke-width:2px,stroke:#ff0000;
+    
+    DA[Dependency A] --> Utils[Utils Package]
+    DB[Dependency B] --> Utils
+    DC[Dependency C] --> Utils
+    DD[Depedency D] --> Utils
+    DE[Depedency E] --> Utils
+    Utils --> MA[Microservice A]
+    Utils --> MB[Microservice B]
+    Utils ---> MC[Microservice C]
+    Utils --> MD[Microservice D]
+    MB --> MD
+    linkStyle 1,5,7,8,9,6 stroke:#ff0000,stroke-width:2px;
+```
+
+Trust me, this scenario is all too familiar, and it's a stark reminder of the complexities we inadvertently create.
 
 
 ## Breaking the Cycle
