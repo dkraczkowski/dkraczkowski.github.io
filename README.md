@@ -16,3 +16,6 @@
 
 
 ### [Mastering the Recruitment Process - Conducting Effective Interviews and Beyond](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/building-recruitment-process)
+
+
+### [Utils- Common Pitfalls](https://github.com/dkraczkowski/dkraczkowski.github.io/tree/main/articles/utils-common-pitfalls)
