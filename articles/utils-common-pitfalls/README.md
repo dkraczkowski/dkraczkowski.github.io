@@ -72,10 +72,10 @@ Business has another deadline for you. You and your team imminently started the 
 
 ```mermaid
 flowchart TD
-    style MA fill:#ff817e,stroke: #00ab41,color: #a60000;
-    style MB fill:#ff817e,stroke: #00ab41,color: #a60000;
-    style MC fill:#ff817e,stroke: #00ab41,color: #a60000;
-    style MD fill:#ff817e,stroke: #00ab41,color: #a60000;
+    style MA fill:#ff817e,stroke: #a60000,color: #a60000;
+    style MB fill:#ff817e,stroke: #a60000,color: #a60000;
+    style MC fill:#ff817e,stroke: #a60000,color: #a60000;
+    style MD fill:#ff817e,stroke: #a60000,color: #a60000;
     style DB stroke-width:2px,stroke:#ff0000;
     style Utils stroke-width:2px,stroke:#ff0000;
     
